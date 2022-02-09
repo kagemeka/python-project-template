@@ -13,23 +13,32 @@ formats: all
 
 python:
   install:
-    - requirements: .
+    # - requirements: docs/requirements.txt
+    # - requirements: requirements.txt
     - method: pip
       path: .
       extra_requirements: []
   system_packages: false
+
+# you can choose either sphinx or mkdocs as document build tool.
 
 sphinx:
   builder: html
   configuration: docs/conf.py
   fail_on_warning: false
 
-mkdocs:
-  configuration: mkdocs.yml
-  fail_on_warning: false
-
+# mkdocs:
+#   configuration: mkdocs.yml
+#   fail_on_warning: false
 
 submodules:
   include: []
   exclude: all
   recursive: false
+
+search:
+  ranking:
+    tests/*: -10
+    tutorial.html: 10
+  ignore:
+    - 404.html
