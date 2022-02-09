@@ -1,5 +1,9 @@
 # Python Project Template
 
+## CI/CD badges.
+[![Python package](https://github.com/kagemeka/python-project-template/actions/workflows/python-package.yml/badge.svg)](https://github.com/kagemeka/python-project-template/actions/workflows/python-package.yml)
+
+for detail, see the [GitHub documentation](https://docs.github.com/en/actions/monitoring-and-troubleshooting-workflows/adding-a-workflow-status-badge)
 
 
 ## docker environment
