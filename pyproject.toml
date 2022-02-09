@@ -18,20 +18,25 @@ exclude = [
   "./**/_test_*.py",
 ]
 homepage = ""
-include = [""]
-keywords = [""]
+include = []
+keywords = ["template", "python"]
 license = "MIT"
 maintainers = ["Hiroshi Tsuyuki <kagemeka1@gmail.com>"]
-name = "pckage-name"
+name = "python-project-template"
 packages = [
-  {include = "atcoder", from = "src"},
+  {include = "package_1", from = "src"},
+  {include = "package_2", from = "src"},
 ]
 readme = "README.md"
-repository = "https://github.com/kagemeka/reponame"
+repository = "https://github.com/kagemeka/"
 version = "0.1.0"
 
 [tool.poetry.dependencies]
 python = ">=3.8,<3.11"
+
+[[tool.poetry.source]]
+name = 'private'
+url = 'http://example.com/simple'
 
 [tool.poetry.extras]
 
@@ -47,6 +52,7 @@ mypy = "^"
 myst-parser = "^"
 pdoc3 = "^"
 pre-commit = "^"
+pycodestyle = "^"
 pydocstyle = "^"
 pylint = "^"
 pyproject-flake8 = "^"
@@ -60,11 +66,13 @@ types-requests = "^"
 types-setuptools = "^"
 
 [tool.poetry.scripts]
+sample-command = "package_2.__main__:main" # run `sample-command`
 
 [tool.poetry.plugins]
 
 [tool.poetry.urls]
 
+# FORMATTING ------------------------------------------------------------------------------
 [tool.black]
 # github: https://github.com/psf/black
 # docs: https://black.readthedocs.io/en/stable/
@@ -89,6 +97,7 @@ profile = "black"
 # profiles: https://pycqa.github.io/isort/docs/configuration/profiles.html
 line_length = 79
 
+# LINTING ------------------------------------------------------------------------------
 [tool.flake8]
 # github: https://github.com/PyCQA/flake8
 # docs: https://flake8.pycqa.org/en/latest/
@@ -103,6 +112,7 @@ show_source = 'true'
 statistics = 'true' 
 verbose = 'true' 
 
+# TYPE CHECKING ------------------------------------------------------------------------------
 [tool.mypy]
 # github: https://github.com/python/mypy
 # docs: https://mypy.readthedocs.io/en/stable/
@@ -131,11 +141,15 @@ show_error_codes = true
 strict = true
 strict_equality = true
 strict_optional = true
+warn_no_return = true
+warn_return_any = true
+warn_unused_ignores = true
 
 [tool.pyre]
 # github: https://github.com/facebook/pyre-check
 # docs: https://pyre-check.org/
 
+# TESTING ------------------------------------------------------------------------------
 [tool.pytest.ini_options]
 # github: https://github.com/pytest-dev/pytest
 # docs: https://docs.pytest.org
