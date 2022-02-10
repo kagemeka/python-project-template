@@ -854,7 +854,7 @@ name = "sphinxcontrib-mermaid"
 version = "0.7.1"
 description = "Mermaid diagrams in yours Sphinx powered docs"
 category = "main"
-optional = false
+optional = true
 python-versions = "*"
 
 [[package]]
@@ -1008,7 +1008,7 @@ docs = ["sphinx", "furo", "myst-parser", "sphinx_rtd_theme", "sphinxcontrib-merm
 [metadata]
 lock-version = "1.1"
 python-versions = ">=3.8,<3.11"
-content-hash = "e105d2f0d943a1a0e8611ddd2bdf15782312e7116b474165a0725cf4fbfd4c20"
+content-hash = "38528a31fdc9ccc24a96bbdcab700fe0a1c7eaf7da3d1706eb7a2740580f6ba5"
 
 [metadata.files]
 alabaster = [

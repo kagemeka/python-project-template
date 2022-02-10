@@ -44,7 +44,7 @@ class _HtmlTheme(enum.Enum):
 
 
 # https://sphinx-themes.org/#themes
-html_theme = _HtmlTheme.FURO.value
+html_theme = _HtmlTheme.SPHINX_RTD_THEME.value
 
 html_theme_path: typing.List[str] = []
 # relative to conf.py
@@ -56,11 +56,12 @@ html_static_path = ["_static"]
 # rtd theme configuration
 # # https://sphinx-rtd-theme.readthedocs.io/en/stable/configuring.html
 html_theme_options: typing.Dict[str, typing.Union[str, bool, int]] = {
+    "analytics_id": "G-0TCKETF0CB",
     "collapse_navigation": True,
     "sticky_navigation": True,
     "navigation_depth": 4,
-    "include_hidden": True,
-    "titles_only": True,
+    "includehidden": True,
+    "titles_only": False,
 }
 
 todo_include_todos = True
