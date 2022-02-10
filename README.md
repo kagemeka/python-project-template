@@ -29,3 +29,26 @@ You can use documenting tools like
 - [mkdocs](https://www.mkdocs.org/)
 
 and host it on [readthedocs](https://docs.readthedocs.io/)
+
+
+### sphinx
+#### shpinx-apidoc
+https://www.sphinx-doc.org/en/master/man/sphinx-apidoc.html
+generate document with sphinx-apidoc command.
+```bash
+$ sphinx
+```
+
+
+sphinx extensions
+https://www.sphinx-doc.org/en/master/usage/extensions/index.html
+
+
+napoleon
+https://www.sphinx-doc.org/en/master/usage/extensions/napoleon.html#module-sphinx.ext.napoleon
+
+numpy style
+https://numpydoc.readthedocs.io/en/latest/format.html#docstring-standard
+
+google style
+https://github.com/google/styleguide/blob/gh-pages/pyguide.md#38-comments-and-docstrings
