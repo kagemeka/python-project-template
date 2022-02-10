@@ -39,7 +39,22 @@ python = ">=3.8,<3.11"
 # name = 'private'
 # url = 'http://example.com/simple'
 
+furo = {version = "^", optional = true}
+myst-parser = {version = "^", optional = true}
+pdoc3 = {version = "^", optional = true}
+sphinx = {version = "^", optional = true}
+sphinx_rtd_theme = {version = "^", optional = true}
+sphinxcontrib-mermaid = {version = "^", optional = true}
+
 [tool.poetry.extras]
+docs = [
+  "sphinx",
+  "furo",
+  "myst-parser",
+  "sphinx_rtd_theme",
+  "sphinxcontrib-mermaid",
+  "pdoc3",
+]
 
 [tool.poetry.dev-dependencies]
 autopep8 = "^"
@@ -47,11 +62,11 @@ bandit = "^"
 black = "^"
 blacken-docs = "^"
 flake8 = "^"
-furo = "^"
+# furo = "^"
 isort = "^"
 mypy = "^"
-myst-parser = "^"
-pdoc3 = "^"
+# myst-parser = "^"
+# pdoc3 = "^"
 pre-commit = "^"
 pycodestyle = "^"
 pydocstyle = "^"
@@ -59,19 +74,30 @@ pylint = "^"
 pyproject-flake8 = "^"
 pytest = "^"
 pytest-asyncio = "^"
-sphinx = "^"
-sphinx_rtd_theme = "^"
+# sphinx = "^"
+# sphinx_rtd_theme = "^"
 sphinxcontrib-mermaid = "^"
 types-PyYAML = "^"
 types-requests = "^"
 types-setuptools = "^"
 
 [tool.poetry.scripts]
+# commands listed here can be invoked from terminal.
 sample-command = "package_2.__main__:main" # run `sample-command`
 
-[tool.poetry.plugins]
+[tool.poetry.plugins."console_scripts"]
+# for details aboud plugins (or entry_points), see
+# https://python-poetry.org/docs/pyproject/#plugins
+# https://setuptools.pypa.io/en/latest/userguide/entry_point.html
+# https://docs.python.org/3/library/importlib.metadata.html
+# 'console_scripts' section is same to 'poetry.scripts'
+add-1-2 = "package_1.__main__:main"
+
+[tool.poetry.plugins."pseudo_package.plugin"]
+sample-plugin = "package_1.plugins:plugin_call"
 
 [tool.poetry.urls]
+"Twitter" = "https://twitter.com/kagemeka"
 
 # FORMATTING ------------------------------------------------------------------------------
 [tool.black]
