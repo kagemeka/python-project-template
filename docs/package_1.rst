@@ -1,31 +1,14 @@
 package\_1 package
 ==================
 
-Subpackages
------------
-
-.. toctree::
-   :maxdepth: 4
-
-
 Submodules
 ----------
 
-package\_1.arithmetic module
-----------------------------
+.. toctree::
+   :maxdepth: 2
 
-.. automodule:: package_1.arithmetic
-   :members:
-   :undoc-members:
-   :show-inheritance:
-
-package\_1.plugins module
--------------------------
-
-.. automodule:: package_1.plugins
-   :members:
-   :undoc-members:
-   :show-inheritance:
+   package_1.arithmetic
+   package_1.plugins
 
 Module contents
 ---------------
