@@ -55,6 +55,8 @@ https://github.com/google/styleguide/blob/gh-pages/pyguide.md#38-comments-and-do
 
 
 ## publish package to Pypi
+[![PyPI version](https://badge.fury.io/py/python-project-templates.svg)](https://badge.fury.io/py/python-project-templates)
+
 [the page of this project](https://pypi.org/project/python-project-templates/)
 
 
