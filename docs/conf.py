@@ -12,6 +12,8 @@
 import enum
 import typing
 
+import sphinx_theme_pd
+
 project = "Python Project Template"
 author = "Hiroshi Tsuyuki <kagemeka1@gmail.com>"
 copyright = f"2022, {author}"
@@ -37,16 +39,22 @@ exclude_patterns = ["_build", "Thumbs.db", ".DS_Store"]
 # relative to source directory.
 
 
+# https://sphinx-themes.org/#themes
 class _HtmlTheme(enum.Enum):
     ALABASTER = "alabaster"
     FURO = "furo"
     SPHINX_RTD_THEME = "sphinx_rtd_theme"
+    PYTHON_DOCS_THEME = "python_docs_theme"
+    SPHINX_THEME_PD = "sphinx_theme_pd"
+    SPHINX_BOOK_THEME = "sphinx_book_theme"
+    PYDATA_SPHINX_THEME = "pydata_sphinx_theme"
 
 
-# https://sphinx-themes.org/#themes
-html_theme = _HtmlTheme.SPHINX_RTD_THEME.value
+html_theme = _HtmlTheme.FURO.value
 
-html_theme_path: typing.List[str] = []
+html_theme_path: typing.List[str] = [
+    sphinx_theme_pd.get_html_theme_path(),
+]
 # relative to conf.py
 
 html_static_path = ["_static"]
@@ -56,7 +64,6 @@ html_static_path = ["_static"]
 # rtd theme configuration
 # # https://sphinx-rtd-theme.readthedocs.io/en/stable/configuring.html
 html_theme_options: typing.Dict[str, typing.Union[str, bool, int]] = {
-    "analytics_id": "G-0TCKETF0CB",
     "collapse_navigation": True,
     "sticky_navigation": True,
     "navigation_depth": 4,
