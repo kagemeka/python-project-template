@@ -2,7 +2,7 @@
 
 ## CI/CD badges.
 [![Python package](https://github.com/kagemeka/python-project-template/actions/workflows/python-package.yml/badge.svg)](https://github.com/kagemeka/python-project-template/actions/workflows/python-package.yml)
-[![readthedocs build status](https://readthedocs.org/projects/atcoder-api-python/badge/?version=latest&style=plastic)](https://readthedocs.org/projects/atcoder-api-python/badge/?version=latest&style=plastic)
+[![readthedocs build status](https://readthedocs.org/projects/python-project-templates/badge/?version=latest)](https://python-project-templates.readthedocs.io/en/latest/?badge=latest)
 
 for detail, see
 - [GitHub documentation](https://docs.github.com/en/actions/monitoring-and-troubleshooting-workflows/adding-a-workflow-status-badge)
@@ -30,6 +30,8 @@ You can use documenting tools like
 
 and host it on [readthedocs](https://docs.readthedocs.io/)
 
+[`Python Project Template`'s documentation](https://python-project-templates.readthedocs.io/)
+---
 
 ### sphinx
 #### shpinx-apidoc
