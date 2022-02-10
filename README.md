@@ -62,5 +62,3 @@ https://github.com/google/styleguide/blob/gh-pages/pyguide.md#38-comments-and-do
 
 ## license
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-
-
