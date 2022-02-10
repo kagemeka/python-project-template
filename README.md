@@ -56,3 +56,9 @@ https://github.com/google/styleguide/blob/gh-pages/pyguide.md#38-comments-and-do
 
 ## publish package to Pypi
 [the page of this project](https://pypi.org/project/python-project-templates/)
+
+
+## license
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+
