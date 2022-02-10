@@ -53,4 +53,14 @@ html_static_path = ["_static"]
 # relative to conf.py
 
 
+# rtd theme configuration
+# # https://sphinx-rtd-theme.readthedocs.io/en/stable/configuring.html
+html_theme_options: typing.Dict[str, typing.Union[str, bool, int]] = {
+    "collapse_navigation": True,
+    "sticky_navigation": True,
+    "navigation_depth": 4,
+    "include_hidden": True,
+    "titles_only": True,
+}
+
 todo_include_todos = True
