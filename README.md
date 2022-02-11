@@ -36,9 +36,8 @@ and host it on [readthedocs](https://docs.readthedocs.io/)
 ### sphinx
 #### [shpinx-apidoc](https://www.sphinx-doc.org/en/master/man/sphinx-apidoc.html)
 generate document with sphinx-apidoc command.
-```bash
-$ sphinx-apidoc -F -o docs src
-```
+[script](scripts/generate_sphinx_docs.sh)
+
 
 #### configurations (todo)
 sphinx extensions

@@ -1,2 +1,3 @@
-poetry build
-poetry publish
+#!/bin/bash
+
+poetry publish --build

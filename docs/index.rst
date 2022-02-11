@@ -1,10 +1,13 @@
-.. Python Project Template documentation master file
+.. Python Project Templates documentation master file, created by
+   sphinx-quickstart on Thu Feb 10 23:37:01 2022.
+   You can adapt this file completely to your liking, but it should at least
+   contain the root `toctree` directive.
 
-Python Project Template documentation
-=====================================
+Welcome to Python Project Templates's documentation!
+====================================================
 
 .. toctree::
-   :maxdepth: 4
+   :maxdepth: 2
    :caption: Contents:
 
    package_1
