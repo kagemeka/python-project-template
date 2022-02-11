@@ -10,7 +10,7 @@
 /dist/
 /html/
 /site/
-/docs/_build
+/docs/**/_build
 __pycache__/
 core
 !.gitkeep

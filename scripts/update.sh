@@ -1,3 +1,3 @@
 #!/bin/bash
 
-poetry udpate
+poetry update

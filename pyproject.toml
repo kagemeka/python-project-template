@@ -132,7 +132,7 @@ line_length = 79
 # docs: https://flake8.pycqa.org/en/latest/
 # options: https://flake8.pycqa.org/en/latest/user/options.html
 count = 'true'
-exclude = ["docs/conf.py"]
+exclude = ["docs/"]
 exit_zero = 'true'
 ignore = 'E203'
 max_complexity = 7 # https://en.wikipedia.org/wiki/Cyclomatic_complexity
