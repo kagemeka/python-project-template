@@ -1,15 +1,3 @@
-"""TODO.
-
-Paste the codes below in your docs/conf.py file
-after generating sphinx headers.
-
-import os
-import sys
-
-sys.path.append(f"{os.path.dirname(os.path.abspath(__file__))}/../src")
-from _sphinx_conf import *
-"""
-
 # https://www.sphinx-doc.org/en/master/usage/configuration.html
 
 import enum
@@ -63,15 +51,5 @@ html_theme_path: typing.List[str] = [
 html_static_path = ["_static"]
 # relative to conf.py
 
-
-# rtd theme configuration
-# # https://sphinx-rtd-theme.readthedocs.io/en/stable/configuring.html
-html_theme_options: typing.Dict[str, typing.Union[str, bool, int]] = {
-    "collapse_navigation": True,
-    "sticky_navigation": True,
-    "navigation_depth": 4,
-    "includehidden": True,
-    "titles_only": False,
-}
 
 todo_include_todos = True
