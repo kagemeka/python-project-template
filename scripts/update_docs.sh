@@ -8,4 +8,5 @@ get_current_file_directory() {
 
 root=$(dirname "$(get_current_file_directory)")
 
-poetry run python "$root"/scripts/build_sphinx_docs.py
+"$root"/scripts/generate_sphinx_docs_headers.sh
+"$root"/scripts/build_sphinx_docs.sh

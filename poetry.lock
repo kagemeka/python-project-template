@@ -490,6 +490,17 @@ optional = false
 python-versions = "*"
 
 [[package]]
+name = "optext-python"
+version = "0.1.1"
+description = "Extension of Optional type inspired by Rust Option<T>."
+category = "main"
+optional = false
+python-versions = ">=3.8,<3.11"
+
+[package.extras]
+docs = ["furo", "myst-parser", "pdoc3", "pydata-sphinx-theme", "python-docs-theme", "sphinx", "sphinx-book-theme", "sphinx-theme-pd", "sphinx_rtd_theme (<=2.0.0)", "sphinxcontrib-mermaid"]
+
+[[package]]
 name = "packaging"
 version = "21.3"
 description = "Core utilities for Python packages"
@@ -1062,7 +1073,7 @@ docs = ["sphinx", "furo", "myst-parser", "sphinx_rtd_theme", "sphinxcontrib-merm
 [metadata]
 lock-version = "1.1"
 python-versions = ">=3.8,<3.11"
-content-hash = "d6c93aed545e68e1c2619abd455083dc49f6646ec0589110033db1881deb140e"
+content-hash = "6b74133a754943cda66f2d52523f7de77a7db482f5aedcee81170f51ebe55364"
 
 [metadata.files]
 alabaster = [
@@ -1369,6 +1380,10 @@ myst-parser = [
 nodeenv = [
     {file = "nodeenv-1.6.0-py2.py3-none-any.whl", hash = "sha256:621e6b7076565ddcacd2db0294c0381e01fd28945ab36bcf00f41c5daf63bef7"},
     {file = "nodeenv-1.6.0.tar.gz", hash = "sha256:3ef13ff90291ba2a4a7a4ff9a979b63ffdd00a464dbe04acf0ea6471517a4c2b"},
+]
+optext-python = [
+    {file = "optext-python-0.1.1.tar.gz", hash = "sha256:79d59f22e99131e0d824ac4f2f860fd4f611f06196d49bd024ab2505c4535399"},
+    {file = "optext_python-0.1.1-py3-none-any.whl", hash = "sha256:0dfb5cc927c6f9def8e33f4063b79d2c5d3e6b52f9aada8657a25155caba69ba"},
 ]
 packaging = [
     {file = "packaging-21.3-py3-none-any.whl", hash = "sha256:ef103e05f519cdc783ae24ea4e2e0f508a9c99b2d4969652eed6a2e1ea5bd522"},
