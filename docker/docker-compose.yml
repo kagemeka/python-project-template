@@ -7,6 +7,7 @@ services:
       dockerfile: Dockerfile
     image: kagemeka/python-project-template:latest
     restart: on-failure
+    # runtime: nvidia # if use CUDA.
     tty: true
     volumes:
       - type: bind
