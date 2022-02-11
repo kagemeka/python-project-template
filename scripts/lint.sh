@@ -10,4 +10,3 @@ root=$(dirname "$(get_current_file_directory)")
 
 poetry run mypy "$root"
 poetry run pflake8 "$root"
-
