@@ -76,3 +76,17 @@ $ ./scripts/publish.sh
 
 ## license
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+
+## Quick Start using this template.
+- edit project name for docker environment.
+- edit project configuration
+  - edit `pyproject.toml`'s metadata section.
+  - delete such as `tool.poetry.scripts` and so on needless.
+- edit documentation configuration.
+  - `docs/_*.conf.py` files.
+  - `scripts/generate_sphinx_docs_headers.py`
+  - `.readthedocs.yaml`'s `sphinx.configuration` option (optional).
+- Rewrite your own project README.
+- delete `src/package_*` directories.
+- now it's time to start make your own package.
