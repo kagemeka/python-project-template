@@ -10,15 +10,15 @@ classifiers = [
   "License :: OSI Approved :: MIT License",
   "Operating System :: OS Independent",
 ]
-description = ""
-documentation = ""
+description = "This is a template for python projects."
+documentation = "https://python-project-templates.readthedocs.io"
 exclude = [
   "**/tests/",
   "**/*_test.py",
   "**/test_*.py",
   "**/_test_*.py",
 ]
-homepage = ""
+homepage = "https://github.com/kagemeka/python-project-template/#readme"
 include = []
 keywords = ["template", "python"]
 license = "MIT"
@@ -29,8 +29,8 @@ packages = [
   {include = "package_2", from = "src"},
 ]
 readme = "README.md"
-repository = "https://github.com/kagemeka/"
-version = "0.1.2"
+repository = "https://github.com/kagemeka/python-project-template"
+version = "0.1.3"
 
 [tool.poetry.dependencies]
 optext-python = "0.1.1"
