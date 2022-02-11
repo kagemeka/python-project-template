@@ -30,7 +30,7 @@ packages = [
 ]
 readme = "README.md"
 repository = "https://github.com/kagemeka/"
-version = "0.1.1"
+version = "0.1.2"
 
 [tool.poetry.dependencies]
 optext-python = "0.1.1"
