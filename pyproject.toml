@@ -33,6 +33,7 @@ repository = "https://github.com/kagemeka/"
 version = "0.1.1"
 
 [tool.poetry.dependencies]
+optext-python = "0.1.1"
 python = ">=3.8,<3.11"
 
 # [[tool.poetry.source]]
@@ -65,6 +66,7 @@ docs = [
 ]
 
 [tool.poetry.dev-dependencies]
+PyYAML = "^"
 autopep8 = "^"
 bandit = "^"
 black = "^"
@@ -132,10 +134,10 @@ line_length = 79
 # docs: https://flake8.pycqa.org/en/latest/
 # options: https://flake8.pycqa.org/en/latest/user/options.html
 count = 'true'
-exclude = ["docs/"]
+exclude = ["docs/", "scripts/"]
 exit_zero = 'true'
 ignore = 'E203'
-max_complexity = 7 # https://en.wikipedia.org/wiki/Cyclomatic_complexity
+max_complexity = 3 # https://en.wikipedia.org/wiki/Cyclomatic_complexity
 max_line_length = 79
 show_source = 'true'
 statistics = 'true'

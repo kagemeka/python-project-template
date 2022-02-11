@@ -1,15 +1,19 @@
 import argparse
-import os
-
-CFD = os.path.dirname(os.path.abspath(__file__))
-ROOT = f"{CFD}/../.."
-SPHINX_DOCS_PATH = f"{ROOT}/docs/sphinx"
 
 CONTENT = """\
 import os
 import sys
 
-sys.path.append(f"{os.path.dirname(os.path.abspath(__file__))}/../../src")
+
+def find_docs_root() -> str:
+    filepath = os.path.abspath(__file__)
+    path_chunks = filepath.split(os.path.sep)
+    while path_chunks[-1] != "docs":
+        path_chunks.pop()
+    return os.path.sep.join(path_chunks)
+
+
+sys.path.append(find_docs_root())
 from _sphinx_conf import *
 from _rtd_conf import *
 """
@@ -25,8 +29,8 @@ if __name__ == "__main__":
     parser.add_argument(
         "--sphinx-docs-path",
         type=str,
-        default=SPHINX_DOCS_PATH,
-        required=False,
+        default=None,
+        required=True,
     )
     args = parser.parse_args()
     _generate(args.sphinx_docs_path)
