@@ -81,9 +81,11 @@ pylint = "^"
 pyproject-flake8 = "^"
 pytest = "^"
 pytest-asyncio = "^"
+toml = "^"
 types-PyYAML = "^"
 types-requests = "^"
 types-setuptools = "^"
+types-toml = "^"
 
 [tool.poetry.scripts]
 # commands listed here can be invoked from terminal.
