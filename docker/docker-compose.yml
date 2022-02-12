@@ -5,15 +5,15 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    image: kagemeka/python-project-template:latest
+    image: kagemeka/$PROJECT_NAME:$PROJECT_VERSION
     restart: on-failure
     # runtime: nvidia # if use CUDA.
     tty: true
     volumes:
       - type: bind
-        source: $ROOT
-        target: /root/$PROJECT
+        source: $PROJECT_ROOT
+        target: /root/$PROJECT_NAME
         volume:
           nocopy: true
         read_only: false
-    working_dir: /root/$PROJECT
+    working_dir: /root/$PROJECT_NAME
