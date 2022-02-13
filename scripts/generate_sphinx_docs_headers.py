@@ -5,7 +5,7 @@ import sys
 sys.path.append(".")
 from scripts._docs_util import ROOT, get_sphinx_docs_directory
 
-SPHINX_DOCS_HEADER = "Optext"
+SPHINX_DOCS_HEADER = "Python\ Project\ Template"
 
 
 def _remove_current_docs(docs_path: str) -> None:
