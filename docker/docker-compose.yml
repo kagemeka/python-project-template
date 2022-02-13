@@ -6,9 +6,13 @@ services:
       context: .
       dockerfile: Dockerfile
     image: kagemeka/$PROJECT_NAME:$PROJECT_VERSION
+    # env_file: # - gui.env # to use display
     restart: on-failure
+    # network_mode: host # to use gui
     # runtime: nvidia # if use CUDA.
+    # init: true
     tty: true
+    # stdin_open: true
     volumes:
       - type: bind
         source: $PROJECT_ROOT
@@ -16,4 +20,12 @@ services:
         volume:
           nocopy: true
         read_only: false
+      # - type: bind # to use gui
+      #   bind:
+      #     propagation: rprivate
+      #   source: /tmp/.X11-unix
+      #   target: /tmp/.X11-unix
+      #   read_only: false
+      #   volume:
+      #     nocopy: true
     working_dir: /root/$PROJECT_NAME

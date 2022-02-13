@@ -1,5 +1,5 @@
 .. Optext documentation master file, created by
-   sphinx-quickstart on Fri Feb 11 10:02:59 2022.
+   sphinx-quickstart on Sun Feb 13 05:37:20 2022.
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
