@@ -32,7 +32,7 @@ def sphinx_apidoc(src_path: str, docs_path: str) -> None:
             f"-H {SPHINX_DOCS_HEADER}",
             "--follow-links",
             "--full",
-            "--seperate",
+            "--separate",
             f"-o {docs_path}",
             "-s rst",
             f"{src_path}",
