@@ -112,6 +112,7 @@ sample-plugin = "package_1.plugins:plugin_call"
 # compatible configurations: https://black.readthedocs.io/en/stable/guides/using_black_with_other_tools.html
 line-length = 79
 target-version = ["py38", "py39", "py310"]
+verbose = true
 
 [tool.autopep8]
 # github: https://github.com/hhatto/autopep8
