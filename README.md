@@ -11,6 +11,8 @@ check [GitHub document](https://docs.github.com/en/repositories/creating-and-man
 [![pre-commit][pre-commit-badge]][pre-commit-url]
 [![CodeQL][codeql-badge]][codeql-url]
 [![License: MIT][mit-badge]][mit-url]
+[![PyPI version][pypi-badge]][pypi-url]
+[![Github pages][gh-pages-badge]][gh-pages-url]
 
 [ci-badge]: https://github.com/kagemeka/python-project-template/actions/workflows/python-package.yml/badge.svg
 [ci-url]: https://github.com/kagemeka/python-project-template/actions/workflows/python-package.yml
@@ -22,6 +24,10 @@ check [GitHub document](https://docs.github.com/en/repositories/creating-and-man
 [codeql-url]: https://github.com/kagemeka/python-project-template/actions/workflows/codeql-analysis.yml
 [mit-badge]: https://img.shields.io/badge/License-MIT-blue.svg
 [mit-url]: https://opensource.org/licenses/MIT
+[pypi-badge]: https://badge.fury.io/py/python-project-templates.svg
+[pypi-url]: https://badge.fury.io/py/python-project-templates
+[gh-pages-badge]: https://github.com/kagemeka/python-project-template/actions/workflows/pages/pages-build-deployment/badge.svg
+[gh-pages-url]: https://kagemeka.github.io/python-project-template
 
 for detail about badges, see
 * [GitHub documentation](https://docs.github.com/en/actions/monitoring-and-troubleshooting-workflows/adding-a-workflow-status-badge)
@@ -79,10 +85,6 @@ google style
 https://github.com/google/styleguide/blob/gh-pages/pyguide.md#38-comments-and-docstrings
 
 ## publish package to Pypi
-
-[![PyPI version](https://badge.fury.io/py/python-project-templates.svg)](https://badge.fury.io/py/python-project-templates)
-
-[the page of this project](https://pypi.org/project/python-project-templates/)
 
 hit this command on terminal to publish the current version to Pypi.
 
