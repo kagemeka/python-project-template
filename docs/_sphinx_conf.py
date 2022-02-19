@@ -1,5 +1,5 @@
 # https://www.sphinx-doc.org/en/master/usage/configuration.html
-
+from __future__ import annotations
 import enum
 import typing
 
@@ -43,7 +43,7 @@ class _HtmlTheme(enum.Enum):
 
 html_theme = _HtmlTheme.FURO.value
 
-html_theme_path: typing.List[str] = [
+html_theme_path: list[str] = [
     sphinx_theme_pd.get_html_theme_path(),
 ]
 # relative to conf.py
