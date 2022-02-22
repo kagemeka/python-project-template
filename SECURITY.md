@@ -9,6 +9,4 @@
 
 ## Reporting a Vulnerability
 
-Tell them where to go, how often they can expect to get an update on a
-reported vulnerability, what to expect if the vulnerability is accepted or
-declined, etc.
+see [code of conduct](./CODE_OF_CONDUCT.md)
