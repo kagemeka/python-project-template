@@ -6,6 +6,9 @@ get_current_file_directory() {
     echo "${directory_path}"
 }
 
+apt update
+apt install -y make
+
 root=$(dirname "$(get_current_file_directory)")
 
 poetry install -E docs

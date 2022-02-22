@@ -1,4 +1,5 @@
 from __future__ import annotations
+
 import typing
 
 # https://sphinx-rtd-theme.readthedocs.io/en/stable/configuring.html
