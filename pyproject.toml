@@ -204,6 +204,7 @@ strict_optional = true
 warn_no_return = true
 warn_return_any = true
 warn_unused_ignores = true
+plugins = "numpy.typing.mypy_plugin"
 
 [tool.pyre]
 # github: https://github.com/facebook/pyre-check
