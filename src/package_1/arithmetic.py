@@ -1,3 +1,10 @@
+"""Mypy Inline Configs.
+see https://mypy.readthedocs.io/en/stable/inline_config.html
+# mypy: disallow-untyped-defs = False
+# mypy:
+"""
+
+
 def add(lhs: int, rhs: int) -> int:
     """Add two integers.
 
